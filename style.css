@@ -1,0 +1,312 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    height: 80px;
+    background-color: #f7f8f9;
+}
+
+.logo-image {
+    height: 30;
+    width: 200;
+}
+
+nav ul {
+
+    list-style-type: none;
+
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+nav ul li {
+    display: inline;
+}
+
+.nav-container {
+    display: flex;
+
+}
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0 2%;
+}
+
+.nav-text {
+    padding-right: 25px;
+    color: #414042;
+}
+
+#hero-section {
+    height: 530px;
+    width: 100%;
+    background: linear-gradient(to top right, rgba(0, 0, 0, .7) 0, rgba(0, 0, 0, 0.5) 30%, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0) 100%);
+
+}
+
+.hero-container {
+    position: relative;
+}
+
+.hero-image {
+    height: 530px;
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+
+    /* left: 50%;
+    top: 50%; */
+
+}
+
+.hero-text-container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height: 530px;
+
+
+}
+
+.hero-text-wrapper {
+    color: white;
+    padding: 60px;
+}
+
+.hero-text-wrapper h1 {
+    font-size: 58px;
+    padding: 0%;
+    margin: 0%;
+}
+
+.hero-text-wrapper h3 {
+    font-size: 28px;
+    padding: 0%;
+    margin: 0%;
+}
+
+#subscribe-section {
+    background-color: rgb(240, 240, 240);
+
+
+}
+
+
+
+.sub-button {
+    background-color: orange;
+    color: #f7f8f9;
+}
+
+.subscribe-wrapper {
+    display: flex;
+
+    justify-content: space-between;
+    padding: 35px 40px;
+    align-items: center;
+    background-image: url("https://www.lockheedmartin.com/content/dam/lockheed-martin/eo/photo/event-banner-updated.jpg.pc-adaptive.1920.medium.jpg");
+
+}
+
+
+.subscribe-container1 h2 {
+    padding: 0%;
+    margin: 0%;
+    font-size: 36px;
+}
+
+.subscribe-container1 h4 {
+    padding: 0%;
+    margin: 0%;
+    font-size: 18px;
+}
+
+.signup-button {
+    background-color: #ff8200;
+    font-size: 38px;
+    color: #ffff;
+    padding: 0px 20px;
+    border: none;
+}
+
+#customer-section {
+    background-color: #f7f8f9;
+    display: flex;
+    /* width: 100%; */
+    flex-direction: column;
+    align-items: center;
+
+    padding: 40px;
+}
+
+.learn {
+    background-color: #132F57;
+    color: white;
+    margin: 20px;
+    padding: 0 15px;
+    font-size: 22px;
+}
+
+
+
+
+
+
+
+.grid-text-container h3 {
+    margin: 10px 0px;
+    font-size: 21px;
+    color: #003478;
+}
+
+.grid-text-container p {
+    padding: 0 0 10px;
+    font-size: 18px;
+    color: #626365;
+}
+
+.image-container img {
+    height: 345px;
+    width: 100%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    gap: 20px;
+
+    background-color: #E2E9EC;
+}
+
+.grid-container div {
+    background-color: #ffff;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+.image-container div {
+
+    height: 250px;
+    margin: 10px 20px;
+
+}
+
+.grid-text-container a {
+    color: #132F57;
+    text-decoration: none;
+    color: #337AB7;
+}
+
+.grid-wrapper {
+
+    background-color: #E2E9EC;
+    padding: 30px;
+}
+
+.grid-wrapper h2 {
+    color: #003478;
+    text-align: center;
+    margin: 20px 0 10px;
+    font-size: 34px;
+}
+
+.stories-btn {
+    background-color: #ff8200;
+    color: white;
+    font-size: 22px;
+    margin: 20px;
+    padding: 0px 15px;
+    border: none;
+
+}
+
+.btn {
+    text-align: center;
+}
+
+/*moblie screen*/
+@media screen and (max-width:760px) {
+    #hero-section {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: minmax(100px, auto);
+    }
+
+    .hero-container {
+        grid-column: 1/4;
+
+    }
+
+    .hero-container img {
+        height: fit-content;
+    }
+
+    .hero-text-wrapper {
+        background-color: #132F57;
+    }
+
+    .hero-image {
+        height: auto;
+        width: 100%;
+        position: absolute;
+        object-fit: fill;
+    
+        /* left: 50%;
+        top: 50%; */
+    
+    }
+
+    .customer-image{
+        width: 100%;
+        max-width: 300px;
+        background-color: red;
+    }
+
+    .subscribe-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 35px 40px;
+        align-items: center;
+    }
+
+    .subscribe-container2 {
+        grid-column: 1/4;
+        grid-row: 2;
+        margin-bottom: 0;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-between;
+        gap: 20px;
+        background-color: #E2E9EC;
+    }
+
+    .img-9 div {
+        display: flex;
+        
+       
+    }
+
+
+}
