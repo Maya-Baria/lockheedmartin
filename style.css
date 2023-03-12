@@ -1,6 +1,7 @@
 body {
     padding: 0;
     margin: 0;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 header {
@@ -79,6 +80,7 @@ nav ul li {
     flex-direction: column;
     justify-content: end;
     height: 530px;
+    font-size: 34px;
 
 
 }
@@ -89,13 +91,13 @@ nav ul li {
 }
 
 .hero-text-wrapper h1 {
-    font-size: 58px;
+    font-size: 39px;
     padding: 0%;
     margin: 0%;
 }
 
 .hero-text-wrapper h3 {
-    font-size: 28px;
+    font-size: 34px;
     padding: 0%;
     margin: 0%;
 }
@@ -127,7 +129,7 @@ nav ul li {
 .subscribe-container1 h2 {
     padding: 0%;
     margin: 0%;
-    font-size: 36px;
+    font-size: 34px;
 }
 
 .subscribe-container1 h4 {
@@ -176,7 +178,7 @@ nav ul li {
 
 .grid-text-container p {
     padding: 0 0 10px;
-    font-size: 18px;
+    font-size: 16px;
     color: #626365;
 }
 
@@ -190,7 +192,6 @@ nav ul li {
     grid-template-columns: repeat(3, 1fr);
     justify-content: space-between;
     gap: 20px;
-
     background-color: #E2E9EC;
 }
 
@@ -216,7 +217,7 @@ nav ul li {
 }
 
 .grid-wrapper {
-
+   
     background-color: #E2E9EC;
     padding: 30px;
 }
@@ -268,13 +269,13 @@ nav ul li {
         width: 100%;
         position: absolute;
         object-fit: fill;
-    
+
         /* left: 50%;
         top: 50%; */
-    
+
     }
 
-    .customer-image{
+    .customer-image {
         width: 100%;
         max-width: 300px;
         background-color: red;
@@ -301,12 +302,13 @@ nav ul li {
         gap: 20px;
         background-color: #E2E9EC;
     }
+    
 
-    .img-9 div {
+    /* .img-9 div {
         display: flex;
-        
-       
-    }
+
+
+    } */
 
 
 }
